@@ -1,23 +1,113 @@
-.user {
-    width: 400px;
-    height: 400px;
-    border: 5px solid black;
-    border-radius: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-#play {
-    display: flex;
-    justify-content: space-around;
+h1 {
+    background-color: gray;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
 }
 
-.result {
+.choice {
+    height: 200px;
     width: 200px;
-    height: 100px;
-    border: 5px solid black;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
-#box {
+img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+/* .choice:hover {
+    background-color: black;
+    cursor: pointer;
+} */
+.choice:hover {
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+.score p:last-child {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+
+#msg {
+    background-color: #222;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 150px;
+        width: 150px;
+    }
+
+    img {
+        height: 130px;
+        width: 130px;
+    }
 }

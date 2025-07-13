@@ -2,23 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project-2(Rock-paper-scissors)</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-2 (Rock-paper-scissors)</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <section id="play">
-        <div class="user">user</div>
-        <div class="user">computer</div>
-    </section>
-    <section id="result">
-        <div>result</div>
-        <div>again</div>
-    </section>
-    <script src="./rock.js"></script>
+    <h1>Rock-paper-scissors</h1>
 
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="./imagies/rock.png" alt="Rock" />
+        </div>
+        <div class="choice" id="paper">
+            <img src="./imagies/paper.png" alt="Paper" />
+        </div>
+        <div class="choice" id="scissors">
+            <img src="./imagies/scissors (1).png" alt="Scissors" />
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+
+    <script src="./rock.js"></script>
 </body>
 
 </html>
